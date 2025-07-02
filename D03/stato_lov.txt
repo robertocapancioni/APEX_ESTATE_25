@@ -1,0 +1,1 @@
+select stato_id,'Stato: '|| stato stato from D03_STATO
