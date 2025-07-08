@@ -1,0 +1,6 @@
+Persona
+  nome vc20 /nn
+  cognome vc20 /nn 
+  data_nascita date /nn
+  email vc50
+  telefono vc20
