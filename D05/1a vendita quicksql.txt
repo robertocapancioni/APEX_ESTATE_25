@@ -1,0 +1,10 @@
+vendita
+  data d /nn
+  prodotto vc50 /nn
+  cliente vc50 /nn
+  zona_cliente vc10 /nn
+  quantita num /nn
+  importo num /nn
+
+
+# settings = {"apex":"Y","auditcols":true,"db":"19c","prefix":"d05","pk":"identity"}
