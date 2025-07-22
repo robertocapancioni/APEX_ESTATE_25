@@ -79,7 +79,7 @@ prodotto /unique prodotto
   prodotto vc50 /nn 
   prezzo acquisto num /nn
   prezzo vendita num /nn
-  tipo_prodotto_id /nn
+  tipo_prodotto id /nn
 
 cliente /unique
   cliente vc50 /nn 
@@ -91,20 +91,17 @@ fornitore /unique fornitore
 
 acquisto
   data date /nn
-  fornitore_id /nn
-  prodotto_id /nn
+  fornitore id /nn
+  prodotto id /nn
   quantita num /nn
 
 vendita
   data date /nn
-  cliente_id  /nn
-  prodotto_id /nn
+  cliente id  /nn
+  prodotto id /nn
   quantita num /nn
 
 
-
-
- Non-default options:
 # settings = {"apex":"Y","db":"19c","prefix":"D09","pk":"IDENTITY"}
 
 */
