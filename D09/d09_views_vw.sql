@@ -9,7 +9,6 @@ select
   join d09_tipo_prodotto tp
     on p.tipo_prodotto_id = tp.id;
 
-
 create or replace view d09_vendita_vw as
 select v.id,
        v.cliente_id,
@@ -21,11 +20,12 @@ select v.id,
        tp.tipo_prodotto,
        v.data,
        v.quantita,
-       v.importo
+       v.quantita * p.prezzo_vendita importo
   from d09_vendita v
   join d09_cliente c on v.cliente_id = c.id 
   join d09_prodotto p on v.prodotto_id = p.id
   join d09_tipo_prodotto tp on p.tipo_prodotto_id = tp.id;
+
 
 create or replace view d09_acquisto_vw as
 select a.id,
@@ -38,7 +38,7 @@ select a.id,
        tp.tipo_prodotto,
        a.data,
        a.quantita,
-       a.quantita * p.prezzo_acquisto valore
+       a.quantita * p.prezzo_acquisto importo
   from d09_acquisto a
   join d09_fornitore f      on a.fornitore_id     = f.id
   join d09_prodotto p       on a.prodotto_id      = p.id
