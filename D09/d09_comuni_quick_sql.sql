@@ -3,7 +3,7 @@ provincia
   provincia vc30 /nn
 
 comune
-  provincia_cod /nn
+  provincia_cod vc2 /nn
   comune vc30 /nn
 
  #prefix: d09 
